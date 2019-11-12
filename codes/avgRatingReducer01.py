@@ -26,4 +26,5 @@ for line in sys.stdin:
 
 if current_movie == movie:
     rating_average = current_rating_sum / current_rating_count
+    if rating_average >= 3.75:
     print ("%s\t%s\t%s" % (current_movie, rating_average, genre))
